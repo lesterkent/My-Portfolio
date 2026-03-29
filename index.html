@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kent Lester | Front-End Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Kent Lester Tabucao, a passionate Front-End Developer specializing in clean, responsive, and user-friendly web experiences." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Bubbles Background -->
+  <div class="bubbles-container" aria-hidden="true">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand logo" href="#home">Kent<span class="text-white"></span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="theme-toggle" class="btn btn-theme-toggle rounded-pill" aria-label="Toggle dark mode">
+              <span id="theme-icon">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5 reveal">
+      <div class="container">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-7 hero-content mb-5 mb-lg-0">
+            <div class="badge-wrapper mb-3">
+              <span class="tag badge rounded-pill bg-primary-soft text-primary px-3 py-2">Front End Developer</span>
+            </div>
+            <h1 class="display-4 fw-bold mb-3">
+              Building clean & <span class="text-gradient">engaging</span> Web experiences
+            </h1>
+            <p class="description lead mb-4">
+              Fresh graduate from Lyceum-Northwestern University. I specialize in crafting user-centric, responsive interfaces with modern technologies.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-outline-primary btn-lg px-4 rounded-pill shadow-sm">View Projects</a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg px-4 rounded-pill">Let's Talk</a>
+              <a href="KentLesterTabucao_Resume_Cv.pdf" class="btn btn-outline-primary btn-lg px-4 rounded-pill" download>
+                <i class="fas fa-download me-2"></i>Download Resume
+              </a>
+            </div>
+            <div class="stats d-flex mt-5 gap-5">
+              <div class="stat-item">
+                <h3 class="fw-bold mb-0">2</h3>
+                <p class="text-blue small">Projects Completed</p>
+              </div>
+              <div class="stat-item">
+                <h3 class="fw-bold mb-0">LNU</h3>
+                <p class="text-blue small">Alma Mater</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="profile-card-wrapper">
+              <div class="profile-card glass-card p-4 rounded-5 text-center shadow-lg">
+                <div class="profile-img-container mb-4">
+                  <div class="img-glow"></div>
+                  <img src="qwert.jpg" id="profileImg" alt="Kent Lester Tabucao" onmouseover="this.src='kentlester.jpg'"
+                    onmouseout="this.src='qwert.jpg'" class="img-fluid rounded-circle border border-5 border-white shadow-sm profile-hover"
+                    style="width: 180px; height: 180px; object-fit: cover; cursor: pointer;" />
+                </div>
+                <h2 class="h4 fw-bold mb-1">Kent Lester Tabucao</h2>
+                <p class="role text-primary fw-medium mb-3">Front-End Developer</p>
+                <div class="info-pills d-flex justify-content-center gap-2 mb-4">
+                  <div class="glass-pill px-3 py-2 rounded-pill border">UI/UX Design</div>
+                  <div class="glass-pill px-3 py-2 rounded-pill border">
+                    <span class="small"><i class="far fa-clock text-warning me-1"></i><span id="time">00:00</span></span>
+                  </div>
+                </div>
+                <div class="mb-5 text-center">
+                  <a href="https://maps.google.com/?q=Villasis,Pangasinan"
+   target="_blank"
+   class="text-decoration-none text-primary small me-2">
+   <i class="fas fa-map-marker-alt me-1"></i> Villasis
+</a>
+
+                </div>
+      <div class="social-links d-flex justify-content-center gap-3">
+
+  <a href="https://github.com/lesterkent" 
+     target="_blank" 
+     rel="noopener"
+     class="social-icon github" 
+     aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="mailto:kenttabucao05@gmail.com"
+     class="social-icon email" 
+     aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <a href="https://www.facebook.com/kent.tabucao" 
+     target="_blank" 
+     rel="noopener"
+     class="social-icon facebook" 
+     aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/lester-tabucao-18984b3b4/" 
+     target="_blank" 
+     rel="noopener"
+     class="social-icon linkedin" 
+     aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 reveal bg-light-soft">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-6 fw-bold">Featured Projects</h2>
+          <div class="header-line mx-auto"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="project-card-v2 h-100 border-0 shadow-sm overflow-hidden rounded-4">
+              <div class="proj-img-wrapper">
+                <div class="proj-img bg-secondary-subtle d-flex align-items-center justify-content-center" style="height: 240px">
+                  <i class="fas fa-car-side display-1 text-white-50"></i>
+                </div>
+                <div class="proj-overlay">
+                  <div class="d-flex justify-content-center"> <a href="#" class="btn btn-light btn-sm rounded-pill px-3"> View Details</a>
+</div>
+                </div>
+              </div>
+              <div class="card-body p-4 text-center">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="h5 fw-bold mb-0 text-primary">Arkila Booking App</h3>
+                  <span class="badge rounded-pill bg-primary-soft text-primary small">React</span>
+                </div>
+                <p class="text-moss fw-bold mb-1">A modern ride-hailing interface built with React, focusing on seamless user booking flows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="project-card-v2 h-100 border-0 shadow-sm overflow-hidden rounded-4">
+              <div class="proj-img-wrapper">
+                <div class="proj-img bg-secondary-subtle d-flex align-items-center justify-content-center" style="height: 240px">
+                  <i class="fas fa-mountain display-1 text-white-50"></i>
+                </div>
+                <div class="proj-overlay">
+                  <div class="d-flex justify-content-center">
+                  <a href="#" class="btn btn-light btn-sm rounded-pill px-3">View Details</a></div>
+                </div>
+              </div>
+              <div class="card-body p-4 text-center">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h3 class="h5 fw-bold mb-0 text-primary">Portfolio Website</h3>
+                  <span class="badge rounded-pill bg-primary-soft text-primary small">HTML, CSS, JS</span>
+                </div>
+                <p class="text-moss fw-bold mb-1">My personal portfolio website showcasing my skills and journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 reveal">
+      <div class="container">
+        <div class="glass-card p-5 rounded-5 shadow-sm">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold mb-4">About Me</h2>
+              <p class="lead text-primary fw-medium mb-3">Aspiring IT professional with a focus on Front-End excellence.</p>
+              <p class="text-moss fw-bold mb-1">
+                As a fresh graduate from Lyceum-Northwestern University, I bring a solid foundation in modern web technologies and a relentless drive to solve complex UI/UX challenges.
+              </p>
+              <div class="d-flex gap-3">
+                <div class="about-stat">
+                  <span class="d-block fw-bold h4 mb-0">Fresh</span>
+                  <span class="text-primary small">Graduate</span>
+                </div>
+                <div class="vr"></div>
+                <div class="about-stat">
+                  <span class="d-block fw-bold h4 mb-0">2</span>
+                  <span class="text-primary small">Major Projects</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- Skills Section -->
+              <div class="skills-grid p-4 rounded-4">
+                <h3 class="h5 fw-bold mb-4 text-center text-moss">Technical Arsenal</h3>
+                <div class="skills-grid d-flex flex-wrap justify-content-center gap-2 mb-4">
+                  <span class="skill-badge"><i class="fab fa-html5 me-1"></i>HTML5</span>
+                  <span class="skill-badge"><i class="fab fa-css3-alt me-1"></i>CSS3</span>
+                  <span class="skill-badge"><i class="fab fa-js me-1"></i>JavaScript</span>
+                  <span class="skill-badge"><i class="fab fa-react me-1"></i>React</span>
+                  <span class="skill-badge"><i class="fas fa-fire me-1"></i>Tailwind</span>
+                  <span class="skill-badge"><i class="fab fa-bootstrap me-1"></i>Bootstrap</span>
+                </div>
+
+                <h3 class="h5 fw-bold mb-4 text-center text-moss">Soft Skills</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center fw-bold mb-1">
+                  <span class="skill-badge primary">Adaptability</span>
+                  <span class="skill-badge primary">Teamwork</span>
+                  <span class="skill-badge primary">Problem Solving</span>
+                  <span class="skill-badge primary">Creativity</span>
+                  <span class="skill-badge primary">Collaboration</span>
+                  <span class="skill-badge primary">Multitasking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Experience & Education Section -->
+<section id="experience" class="py-5 reveal bg-light-soft">
+  <div class="container">
+    <h2 class="section-title mb-5 text-center">
+      <i class="fas fa-briefcase me-2 text-primary"></i> Experience & Education
+    </h2>
+
+    <div class="row g-5 justify-content-center">
+
+      <div class="col-lg-6">
+  <div class="timeline-item p-5 glass-card rounded-4 shadow-sm border-start border-4 border-secondary position-relative">
+    
+    <span class="badge rounded-pill bg-secondary-subtle text-primary px-4 py-2 position-absolute top-0 end-0 m-4">
+      2024 - 2025
+    </span>
+
+    <div class="mb-3">
+      <h4 class="fw-bold mb-2">On-The-Job Training & IT Support</h4>
+      <span class="badge rounded-pill bg-primary-subtle text-primary px-3 py-2">
+        Mina Skills Training and Assessment Academy Inc – TESDA (VILLASIS)
+      </span>
+    </div>
+
+    <p class="text-moss fw-bold mb-0">
+      Provided technical and administrative support for CSS classrooms, maintaining 
+      <strong>100% workstation uptime</strong>. Managed classroom IT infrastructure 
+      and documentation using Microsoft Office Suite while gaining hands-on experience 
+      in graphic design and web support.
+    </p>
+    
+  </div>
+</div>
+
+      <!-- EDUCATION -->
+      <div class="col-lg-6">
+        <div class="timeline-item p-5 glass-card rounded-4 shadow-sm border-start border-4 border-secondary position-relative">
+          
+          <div class="mb-3 d-flex justify-content-between align-items-center">
+            <h4 class="fw-bold mb-1">Education</h4>
+
+            <span class="badge rounded-pill bg-secondary-subtle text-primary px-4 py-2 position-absolute top-0 end-0 m-4">
+      2018 - 2024
+    </span>
+          </div>
+
+          <p class="fw-semibold text-primary mb-2">
+            Lyceum-Northwestern University
+          </p>
+
+          <ul class="text-moss fw-bold mb-0">
+            <li>BS Information Technology – Specialized in Web Development & UI/UX Design</li>
+            <li>Capstone Project: Arkila Booking Application</li>
+            <li>TVL – ICT Strand: Computer Systems Servicing, Networking Fundamentals, and Programming Logic</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 reveal">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="contact-wrapper glass-card p-0 overflow-hidden rounded-5 shadow-lg">
+              <div class="row g-0">
+                <div class="col-md-5 bg-primary p-5 text-white">
+                  <h2 class="fw-bold mb-4">Get In Touch</h2>
+                  <p class="mb-5 opacity-75">I'm looking for new opportunities. Let's build something amazing together!</p>
+                  <div class="contact-info">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="icon-circle bg-white text-primary me-3 text-center" style="width:40px;height:40px;line-height:40px;border-radius:50%;">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <span>+63 951 309 5784</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="icon-circle bg-white text-primary me-3 text-center" style="width:40px;height:40px;line-height:40px;border-radius:50%;">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <span>kenttabucao05@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-7 p-5 bg-white">
+                  <form id="contact-form">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <label class="text-primary form-label small fw-bold">Your Name</label>
+                        <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="Your Name" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-primary form-label small fw-bold">Your Email</label>
+                        <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="Email" required />
+                      </div>
+                      <div class="col-12">
+                       <label class="text-primary form-label small fw-bold">Message</label>
+                        <textarea class="form-control form-control-lg bg-light border-0" rows="4" placeholder="How can I help you?" required></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 shadow-sm">Send Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-5 mt-5">
+    <div class="container text-center">
+      <div class="footer-logo mb-4">
+        <a class="navbar-brand logo h3" href="#home">Kent<span class="text-primary">.</span></a>
+      </div>
+      <div class="footer-socials mb-4 d-flex justify-content-center gap-3">
+        <a href="https://github.com/lesterkent" class="footer-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/kent.tabucao" class="footer-link"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:kenttabucao05@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="text-black small mb-0">2026 Kent Lester Tabucao </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+ <button id="scroll-down" class="btn btn-secondary rounded-circle shadow-lg" aria-label="Scroll down">
+  <i class="fas fa-arrow-down"></i>
+</button>
+
+<button id="back-to-top" class="btn btn-primary rounded-circle shadow-lg" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
